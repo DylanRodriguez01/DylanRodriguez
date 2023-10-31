@@ -1,0 +1,296 @@
+* {
+  box-sizing: border-box;
+}
+body, h1 {
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* background-color: #9cf79d; */
+  background-image: linear-gradient(to bottom, #39c7fa, teal);
+  background-repeat: no-repeat;
+  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#wrapper{
+ /* background-color: #9cf79d; */
+  background-image: linear-gradient(to bottom, #80d0c7, #13547a);
+  color: #000000;
+  margin-left: auto;
+  margin-right: auto;
+}
+header {
+  background-color: #80d0c7;
+  color: white;
+  /*height: 40px; */
+  text-align: center;
+}
+header h1 {
+  padding-top: 10px;
+}
+/* nav{
+  text-align: center;
+  /*padding-top: 20px;
+  background-color: white;
+  background-image: linear-gradient(to bottom, #80d0c7, #13547a);
+} 
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+  /*margin-right: 10px;
+} 
+*/
+nav li a {
+  display: inline-block;
+  color: maroon;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+nav a:link {
+  color: black;
+}
+nav a:visited{
+  color: #0e2e61; /* goes wjth website color */
+}
+nav a:hover {
+  color: #18bc9c;
+}
+nav a.active {
+  background-color: lightgoldenrodyellow;
+  border-radius: 3px;
+  color: blanchedalmond;
+  margin-left: 16px;
+}
+
+#heroimg{
+  background-image: url(starwars.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 600px;
+  background-attachment: fixed;
+}
+#educationimg{
+  background-image: url(view.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 800px;
+  background-attachment: none;
+}
+#contactsimg{
+  background-image: url(IMG_2673.JPG);
+  background-size: 90% 100%;
+  background-repeat: no-repeat;
+  height: 500px;
+  background-attachment: none;
+}
+.imgcontainer{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+}
+.twocontainer {
+  float: left;
+  width: 50%; /*25% for four, 50% for two etc. */
+  padding: 10px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both; /*content after twocon displayed no     float */
+}
+section {
+  padding: 2rem;
+}
+section.evenrow {
+  color: white;
+  background-image: linear-gradient(to bottom, #2eb2b2, #2a5974);
+}
+
+div {display: block;}
+/*main {
+  padding-left: 30px;
+  padding-right: 30px;
+}*/
+table, th, td {
+  border: 1px solid black;
+}
+th, td {
+  padding: 10px;
+}
+th {
+  background-color: maroon;
+  color: white;
+}
+tr:nth-of-type(odd) {
+  background-color: coral;
+}
+tr:nth-of-type(even) {
+  background-color: lightgreen;
+}
+object {
+  height: 700px;
+  width: 80%;
+}
+#myPdf {
+  /* Add the following styles to center the PDF */
+  display: block;
+  margin: 0 auto;
+}
+
+.logo {
+  display: none;
+}
+form {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 50em;
+  width: 80%;
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 12em 1fr;
+}
+.button-container {
+  grid-column: 2;
+  display: flex;
+  flex-direction: row;
+}
+#resumebutton {
+  text-align: center;
+}
+form input[type="submit"],
+form input[type="reset"] {
+  width: 35%;
+  margin-right: 10px;
+}
+footer {
+  background-color: #1c5a7d;
+  color: white;
+  height: 80px;
+  text-align: center;
+}
+footer p {
+  margin: 0 0 10px 0;
+}
+.socialMediaLinks a {
+  font-size: 20px;
+  margin: 0 10px 0 0;
+  text-decoration: none;
+  background-color: white;
+  padding: 10px;
+  width: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+.menu-icon {
+  cursor: pointer;
+  display: block;
+  margin-left: 10px;
+  font-size: 24px;
+  text-align: right;
+  padding: 14px 16px;
+}
+.nav-menu {
+  overflow: hidden;
+  background-color: #6bc2b8;
+  position: relative;
+  z-index: 10000;
+  list-style: none;
+  padding: 0;
+}
+@media screen and (min-width: 789px) {
+  nav {
+    text-align: center;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: inline;
+    margin-right: 10px; 
+  }
+
+  nav li a {
+    display: inline-block;
+    color: maroon;
+    text-align: center;
+    padding: 14px 0px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .menu-icon {
+    display: none;
+  }
+  .nav-menu {
+    display: block;
+    background-color: transparent;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .logo {
+    display: block;
+    float: left;
+    margin-left: 10px;
+    width: 100px;
+    height: 60px;
+    object-fit: fill;
+  }
+  #threecontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  }
+  section section {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  nav {
+    text-align: left;
+    padding-top: 20px;
+  }
+  nav a:link {
+    color: black;
+  }
+  nav a:visited{
+    color: #0e2e61; /* goes wjth website color */
+  }
+  nav a:hover {
+    color: #18bc9c;
+  }
+  .imgcontainer{grid-area: hero;}
+  header{grid-area: header;}
+  nav{grid-area: nav;}
+  main{grid-area: main;}
+  footer{grid-area: footer;}
+  
+
+  #wrapper {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-areas: 
+      "header header"
+      "nav hero"
+      "nav main"
+      "nav footer";
+  }
+}
